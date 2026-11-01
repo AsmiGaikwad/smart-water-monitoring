@@ -1,0 +1,9 @@
+streamlit
+pandas
+plotly
+supabase
+python-dotenv
+paho-mqtt
+scikit-learn
+joblib
+streamlit-autorefresh
