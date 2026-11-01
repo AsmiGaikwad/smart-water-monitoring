@@ -21,18 +21,24 @@ st.markdown(
     """
     <style>
     .block-container {
-        padding-top: 1.4rem;
+        padding-top: 2.5rem;
         padding-bottom: 2rem;
         max-width: 1500px;
+        overflow: visible;
     }
     .main-heading {
         font-size: 2rem;
         font-weight: 750;
-        margin-bottom: 0;
+        line-height: 1.35;
+        padding-top: 0.25rem;
+        padding-bottom: 0.15rem;
+        margin: 0;
+        overflow: visible;
     }
     .sub-heading {
         color: #808080;
-        margin-top: 0.2rem;
+        line-height: 1.5;
+        margin-top: 0.35rem;
         margin-bottom: 1rem;
     }
     div[data-testid="stMetric"] {
@@ -141,6 +147,7 @@ def reference_check(row):
 # =========================================================
 # HEADER + MANUAL REFRESH
 # =========================================================
+st.write("")  # Adds space below Streamlit's top toolbar.
 header_left, header_right = st.columns([5, 1])
 
 with header_left:
@@ -595,4 +602,3 @@ st.caption(
     "Water quality screening is indicative only. Actual drinking-water safety "
     "requires appropriate laboratory testing."
 )
-
